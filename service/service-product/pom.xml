@@ -17,6 +17,11 @@
             <artifactId>minio</artifactId>
             <version>8.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 

@@ -7,7 +7,9 @@
     <module>common</module>
     <module>model</module>
     <module>service</module>
-      <module>server-gateway</module>
+    <module>server-gateway</module>
+    <module>service-client</module>
+      <module>web</module>
   </modules>
 
   <!--引入spring boot 父工程-->
@@ -116,5 +118,18 @@
     </dependencies>
 
   </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 
 </project>
